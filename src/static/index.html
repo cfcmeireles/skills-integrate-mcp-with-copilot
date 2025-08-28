@@ -15,6 +15,24 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div id="activity-filters" class="toolbar">
+          <input
+            type="text"
+            id="activity-search"
+            placeholder="Search activities..."
+          />
+          <select id="activity-category">
+            <option value="">All Categories</option>
+            <option value="Club">Club</option>
+            <option value="Team">Team</option>
+            <option value="Class">Class</option>
+            <option value="Other">Other</option>
+          </select>
+          <select id="activity-sort">
+            <option value="name">Sort by Name</option>
+            <option value="time">Sort by Time</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
@@ -26,7 +44,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
